@@ -26,19 +26,30 @@
         <div>
                 <form action="/action_page.php">
                   <label for="fname">Nombre</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <input type="text" id="nombre" name="firstname" placeholder="Nombres y Apellido">
               
                   <label for="lname">Codigo</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <input type="text" id="codigo" name="lastname" placeholder="Codigo URP">
               
                   <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-                
-                  <input type="submit" value="Submit">
+                 
+                <button type="button" onclick="myFunction()">Click</button>
+
+                    <p id="demo">This is a demonstration.</p>
+                    <p id="demo1">N° 1</p>
+                    <p id="p"></p>
+
+                    <script>
+                    document.getElementById("demo").onmouseover = function() {mouseOver()};
+                    
+                    function myFunction() { 
+                    document.getElementById("demo").innerHTML = "Hola JavaScript!";
+                    }
+                    function mouseOver() {
+                    document.getElementById("p").Math.random();
+                    return Math.random();
+                    }
+                    </script>
                 </form>
               </div>
     
@@ -141,7 +152,7 @@
         box-sizing: border-box;
         }
 
-        input[type=submit] {
+        button[type=button] {
         width: 100%;
         background-color: #4CAF50;
         color: white;
@@ -152,7 +163,7 @@
         cursor: pointer;
         }
 
-        input[type=submit]:hover {
+        button[type=button]:hover {
         background-color: #45a049;
         }
 
