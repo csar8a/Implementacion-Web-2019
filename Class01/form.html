@@ -23,14 +23,24 @@
     </ul>
   </nav>
   <article>
-    <h1>LIGA 1 - MOVISTAR</h1>
-    <p></p>
-    <p style="text-align :left"> El campeonato está constituido de dos torneos cortos: Torneo Apertura y Torneo Clausura; semifinales que serán jugadas entre los ganadores de los dos torneos cortos y los dos equipos que ocupen el primer y segundo lugar del acumulado; y una final entre los ganadores de estas llaves.
-        El Torneo Apertura y Clausura se jugará con los 18 equipos participantes, mediante el sistema de todos contra todos, totalizando 17 partidos cada uno. Al término de ellos, el primer equipo se proclamará campeón y clasificará a las semifinales. En el Clausura será de la misma manera, pero con localía que estará invertida con respecto al Apertura.
-        Para concluir, los campeones de los dos torneos y los dos mejores ubicados de la tabla acumulada del campeonato se enfrentarán en las semifinales, en partidos de ida y vuelta. Los ganadores de las llaves jugarán la final del campeonato, también en partidos de ida y vuelta, y el ganador se proclamará campeón nacional3​. En caso un equipo gane los dos torneos se proclamará campeón nacional de manera directa, si dos equipos diferentes ganan el apertura y clausura y ocupan
-        los dos primeros lugares del acumulado jugarán la final de manera directa, si un solo ganador ocupa uno de los dos primeros lugares del acumulado, clasifica directamente a la final.
-    </p>
-    <img src="https://i0.wp.com/exitosanoticias.pe/v1/wp-content/uploads/2019/01/liga-1-peru.jpg" class="imagencentral">
+        <div>
+                <form action="/action_page.php">
+                  <label for="fname">Nombre</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Codigo</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
     
 
   </article>
@@ -118,5 +128,37 @@
             width: 100%;
             height: auto;
           }
+        }
+
+
+        input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
         }
         </style>
